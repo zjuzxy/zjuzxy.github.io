@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let person = {
+			name: 'zhang',
+			girlfriend: {
+				name: 'yu',
+				sex: 'female'
+			}
+		}
+		let person1 = {...person} //No person与person1的girlfriend仍然指向同一个地址        
+		let person2 = JSON.parse(JSON.stringify(person))//Yes
+	</script>
+</body>
+</html>
